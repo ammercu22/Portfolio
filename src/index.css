@@ -51,6 +51,20 @@ body{
     width:100%
 }
 
+#home button{
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid #F08080;
+    border-radius:5px;
+    padding: 5px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+#home button:hover{
+    background-color: #F08080;
+    color: #151D5E
+}
 #home{
     text-align: left;
     text-transform: uppercase;
@@ -197,16 +211,17 @@ body{
     transform:translate(-50%, -50%);
     z-index:10;
     background-color:#333333;
-    width:1000px;
-    height: 500px;
+    width:1100px;
+    height: 600px;
     transition: 200ms ease-in-out;
     display: flex;
     border-radius: 10px;
+    
  }
 
  .modal-image{
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,13 +229,16 @@ body{
     text-align: center;
  }
  .modal-image img{
-    height: 450px;
-    width: 450px;
+    height: 550px;
+    width: 550px;
     border-radius: 10px;
+    object-fit: cover;
  }
  .modal-description{
-    height: 500px;
-    width: 500px;
+    height: 550px;
+    width: 550px;
+    font-size:17px;
+    line-height: 23px;
  }
  .modal-header{
     padding: 10px 15px;
@@ -252,7 +270,7 @@ body{
  .modal-tech p{
     border: 2px solid #4d4d4d;
     text-align: center;
-    font-size: 15px;
+    font-size:17px;
     vertical-align: middle;
     line-height: 25px;
     margin-right: 10px;
@@ -261,8 +279,9 @@ body{
     background:#1a1a1a;
  }
  .modal-body .about{
+    text-align:left;
     word-wrap: break-word;
-    height:327px;
+    height:415px;
     overflow-y: scroll;
  }
 
@@ -281,21 +300,26 @@ body{
   }
 
 
- .modal-body a{
+ .modal-body button{
     letter-spacing: 2px;
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
     border-radius:5px;
     padding: 5px;
     text-transform: uppercase;
     transition: 0.5s;
  }
+ .modal-body button img{
+    padding-right:10px;
+ }
  .modal-body .available-button:hover{
     background-color: #F08080;
     color:#333333
 }
+
 .available-button{
     color:#F08080;
+    background: none;
     border: 2px solid #F08080;
 }
 .unavailable-button{
@@ -307,21 +331,29 @@ body{
 
  .modal-body .buttons{
     padding-top:15px;
+    display:flex;
  }
 
+ .modal-body .buttons div{
+    padding-left:15px;
+    
+ }
  #overlay{
     position:fixed;
-    opacity: 0;
+    opacity: 1;
     top:0;
     left:0;
     right:0;
     bottom:0;
     background-color: rgba(0,0,0,0.5);
-    pointer-events:none;
     transition: 200ms ease-in-out;
+    z-index:10;
  }
 
- #overlay.active{
-    pointer-events:all;
-    opacity:1;
- }
+.social-media {
+    padding-top: 50px;
+    display: flex;
+}
+.social-media div{
+    padding-left: 10px;
+}

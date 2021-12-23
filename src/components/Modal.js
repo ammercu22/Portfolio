@@ -1,6 +1,9 @@
 import React from 'react'
-
-function Modal({id, imgSrc, title, techArray,about, closeModal}) {
+import github_b from '../assets/github-b.png'
+import github_w from '../assets/github.png'
+import link_w from '../assets/link2.png'
+import link_b from '../assets/link1.png'
+function Modal({id, imgSrc, title, techArray,about, closeModal, github, demo}) {
 
     return (
         <div className="modal" id={id}>
@@ -19,11 +22,12 @@ function Modal({id, imgSrc, title, techArray,about, closeModal}) {
                 </div>
                 <div className="modal-body">
                     <div className = "about">
-                        <p>{about}</p>
+                        {about}
                     </div>
                     <div className = "buttons">
-                        <a href="#" className="unavailable-button" >Demo</a>
-                        <a className = "available-button" href="" target="_blank" rel="noopener noreferrer">Code</a>
+                        {github === true? <div><button className = "available-button"><img src={github_w} width= "20px" alt=''/>Code</button> </div>: <div><button className = "unavailable-button"><img src={github_b} width= "20px" alt=''/>Code</button> </div>}
+                        {demo === true? <div><button className = "available-button"><img src={link_w} width= "20px" alt=''/>Demo</button></div> : <div><button className = "unavailable-button"><img src={link_b} width= "20px" alt=''/>Demo</button> </div>}
+                        
                     </div>
                 </div>
             </div>
