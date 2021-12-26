@@ -3,7 +3,7 @@ import github_b from '../assets/github-b.png'
 import github_w from '../assets/github.png'
 import link_w from '../assets/link2.png'
 import link_b from '../assets/link1.png'
-function Modal({id, imgSrc, title, techArray,about, closeModal, github, demo}) {
+function Modal({id, imgSrc, title, techArray,about, closeModal, github, demo, githubLink, demoLink}) {
 
     return (
         <div className="modal" id={id}>
@@ -25,8 +25,8 @@ function Modal({id, imgSrc, title, techArray,about, closeModal, github, demo}) {
                         {about}
                     </div>
                     <div className = "buttons">
-                        {github === true? <div><button className = "available-button"><img src={github_w} width= "20px" alt=''/>Code</button> </div>: <div><button className = "unavailable-button"><img src={github_b} width= "20px" alt=''/>Code</button> </div>}
-                        {demo === true? <div><button className = "available-button"><img src={link_w} width= "20px" alt=''/>Demo</button></div> : <div><button className = "unavailable-button"><img src={link_b} width= "20px" alt=''/>Demo</button> </div>}
+                        {github === true? <div><a className = "available-button" href= {githubLink} target="_blank" rel="noopener noreferrer" ><img src={github_w} width= "20px" alt=''/>Code</a> </div>: <div><button className = "unavailable-button"><img src={github_b} width= "20px" alt=''/>Code</button> </div>}
+                        {demo === true? <div><a className = "available-button" href={demoLink}  target="_blank" rel="noopener noreferrer" ><img src={link_w} width= "20px" alt=''/>Demo</a></div> : <div><button className = "unavailable-button"><img src={link_b} width= "20px" alt=''/>Demo</button> </div>}
                         
                     </div>
                 </div>

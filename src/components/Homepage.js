@@ -11,10 +11,10 @@ function Homepage() {
                 </div>
                 <ul className="nav-links">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                 </ul>
             </nav>
@@ -27,9 +27,9 @@ function Homepage() {
                     <button className = "available-button">Resume</button>
                 </div>
                 <div className='social-media'>
-                    <div><img src={github} width = "40px" alt=""/></div>
-                    <div><img src={linkedin} width="45px"  alt=""></img></div>
-                    <div><img src={email} width="45px"  alt=""></img></div>
+                    <div><a href="https://github.com/ammercu22/" target="_blank" rel="noopener noreferrer"><img src={github} width = "40px" alt=""/></a></div>
+                    <div><a href="https://www.linkedin.com/in/alliyah-mercurio-ab7b2a218/" target="_blank" rel="noopener noreferrer" ><img src={linkedin} width="45px"  alt=""/></a></div>
+                    <div><div className='email'><h5>ammerc4@gmail.com</h5></div><img className = "emailImg" src={email} width="45px"  alt=""></img></div>
                 </div>
             </div>
         </div>

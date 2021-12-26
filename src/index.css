@@ -309,9 +309,24 @@ body{
     text-transform: uppercase;
     transition: 0.5s;
  }
+ .modal-body a{
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius:5px;
+    padding: 8px;
+    text-transform: uppercase;
+    transition: 0.5s;
+ }
  .modal-body button img{
+    
     padding-right:10px;
  }
+ .modal-body a img{
+    padding-top: 4px;
+    padding-right:10px;
+ }
+
  .modal-body .available-button:hover{
     background-color: #F08080;
     color:#333333
@@ -328,7 +343,6 @@ body{
     border: 2px solid black;
 }
 
-
  .modal-body .buttons{
     padding-top:15px;
     display:flex;
@@ -336,7 +350,6 @@ body{
 
  .modal-body .buttons div{
     padding-left:15px;
-    
  }
  #overlay{
     position:fixed;
@@ -356,4 +369,26 @@ body{
 }
 .social-media div{
     padding-left: 10px;
+}
+
+.email{
+    opacity: 0;
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    transition: 0.2s
+}
+.email h5{
+    font-size: 17px;
+    padding-left: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding-top: 13px;
+}
+
+.email:hover{
+    width: 350px; 
+    opacity: 1;
+
 }
