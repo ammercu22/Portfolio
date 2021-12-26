@@ -7,6 +7,10 @@ function App() {
     <div className="App">
       <Homepage/>
       <Projects/>
+      <div className="credits">
+        <h4>Credits:</h4>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> </div>
+      </div>
     </div>
   );
 }

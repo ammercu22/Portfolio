@@ -51,17 +51,31 @@ body{
     width:100%
 }
 
-#home button{
-    letter-spacing: 2px;
-    font-size: 20px;
+
+#home .available-button{
     text-decoration: none;
     border: 2px solid #F08080;
     border-radius:5px;
     padding: 5px;
     transition: 0.5s;
-    text-transform: uppercase;
+    display: flex;
+    width: 130px;
+    color: #F08080;
 }
-#home button:hover{
+#home .available-button h6{
+    padding-top: 6px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#home .available-button div{
+    width: 45px;
+}
+#home .available-button img{
+    width: 100%;
+}
+#home .available-button:hover{
     background-color: #F08080;
     color: #151D5E
 }
@@ -391,4 +405,13 @@ body{
     width: 350px; 
     opacity: 1;
 
+}
+.credits{
+    opacity: 0.8;
+    padding-top: 200px;
+    padding-left: 75px;
+    padding-bottom: 15px;
+}
+.credits a{
+    color:cornflowerblue
 }

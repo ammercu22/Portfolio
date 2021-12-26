@@ -46,7 +46,7 @@ function Card({id, title, imgSrc, linksArray, techArray, modalTarget}) {
                     to be displayed. The technologies that I used were Flutter which uses the language 'Dart' and the Google Maps API. <br></br><br></br>The project is no longer available 
                     to use because the server running on the back-end of our app is now unavailable since it was school administrated and neither our group or our clients
                      could agree on where to host a new server. The code for this project is also unavailable because there was a lot of information that our group wanted 
-                     to keep private such as APIs and database info (IP addresses, passwords, etc.) . </p>}/>     
+                     to keep private such as API keys and database info (IP addresses, passwords, etc.) . </p>}/>     
                 </div>
                 : null
                     }

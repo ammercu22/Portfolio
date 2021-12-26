@@ -7,8 +7,10 @@ import tours from '../assets/tours.png'
 import github from '../assets/github.png'
 import link from '../assets/link2.png'
 
-//https://www.youtube.com/watch?v=6KTHj4XE0ns
 //<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+//<div>Icons made by <a href="" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+
 function Projects() {
     return (
             <div className='page' id='projects'>

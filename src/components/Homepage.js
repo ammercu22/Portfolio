@@ -2,6 +2,8 @@ import React from 'react';
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import email from '../assets/email.png'
+import resume from '../assets/Updated Resume.pdf'
+import download from '../assets/download (1).png'
 function Homepage() {
     return (
         <div>
@@ -24,7 +26,8 @@ function Homepage() {
                     <h2>Hey, I'm</h2>
                     <h1>Alliyah Mercurio</h1>
                     <p>Software Engineer</p>
-                    <button className = "available-button">Resume</button>
+                    <a className = "available-button" href={resume} download="resume"> <div><img src={download}/></div><h6>Resume</h6></a>
+                    
                 </div>
                 <div className='social-media'>
                     <div><a href="https://github.com/ammercu22/" target="_blank" rel="noopener noreferrer"><img src={github} width = "40px" alt=""/></a></div>
