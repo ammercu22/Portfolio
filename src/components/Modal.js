@@ -8,7 +8,7 @@ function Modal({id, imgSrc, title, techArray,about, closeModal, github, demo, gi
     return (
         <div className="modal" id={id}>
             <div className="modal-image">
-            {id === 'tours'? <iframe width="550" height="550" src="https://www.youtube.com/embed/6KTHj4XE0ns?start=279" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : <img src={imgSrc}/>}
+            {id === 'tours'? <iframe width="550" height="550" src="https://www.youtube.com/embed/6KTHj4XE0ns?start=279" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : <img alt="" src={imgSrc}/>}
             </div>
             <div className="modal-description">
                 <div className="modal-header">

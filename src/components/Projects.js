@@ -16,8 +16,8 @@ function Projects() {
             <div className='page' id='projects'>
                 <h2>Projects</h2>
                 <div className ="cards">
-                    <Card id = "chess" title = "Chess Game" imgSrc = {chess} linksArray = {[<a href="https://github.com/ammercu22/Pygame-Chess" target="_blank" rel="noopener noreferrer"><img key ='9' src={github} width="35px" alt=""/></a>]} techArray = "Python" modalTarget = "#chess"/>
-                    <Card id = "stats" title = "Apex Legends Stat Tracker" imgSrc = {apex} linksArray = {[<a href="https://github.com/ammercu22/Video-Game-Stat-Tracker" target="_blank" rel="noopener noreferrer"><img key='10' src={github} alt="" width="35px"/></a>, <a href="https://video-game-stat-tracker.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img key='11' src={link} width="40px"alt=""/></a>]} techArray = "ReactJS&emsp;Express/Node.js&emsp;Tracker Network API" modalTarget = "#stats"/>
+                    <Card id = "chess" title = "Chess Game" imgSrc = {chess} linksArray = {[<a key="20" href="https://github.com/ammercu22/Pygame-Chess" target="_blank" rel="noopener noreferrer"><img key ='9' src={github} width="35px" alt=""/></a>]} techArray = "Python" modalTarget = "#chess"/>
+                    <Card id = "stats" title = "Apex Legends Stat Tracker" imgSrc = {apex} linksArray = {[<a key="21" href="https://github.com/ammercu22/Video-Game-Stat-Tracker" target="_blank" rel="noopener noreferrer"><img key='10' src={github} alt="" width="35px"/></a>, <a key="22"href="https://video-game-stat-tracker.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img key='11' src={link} width="40px"alt=""/></a>]} techArray = "ReactJS&emsp;Express/Node.js&emsp;Tracker Network API" modalTarget = "#stats"/>
                     <Card id = "tours" title = "Madison County History Tours App" imgSrc = {tours} linksArray = {null} techArray = "Flutter&emsp;Dart&emsp;MySQL&ensp;Google Maps API" modalTarget = "#tours"/>
                 </div>
             </div>

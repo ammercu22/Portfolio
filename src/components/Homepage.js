@@ -26,7 +26,7 @@ function Homepage() {
                     <h2>Hey, I'm</h2>
                     <h1>Alliyah Mercurio</h1>
                     <p>Software Engineer</p>
-                    <a className = "available-button" href={resume} download="resume"> <div><img src={download}/></div><h6>Resume</h6></a>
+                    <a className = "available-button" href={resume} download="resume"> <div><img alt ="" src={download}/></div><h6>Resume</h6></a>
                     
                 </div>
                 <div className='social-media'>
